@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/new_form"
-
-            android:title="New Form" />
+            android:title="New form" />
+        <item
+            android:id="@+id/view_forms"
+            android:title="View all forms" />
 
     </group>
 </menu>

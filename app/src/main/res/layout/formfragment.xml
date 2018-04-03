@@ -16,40 +16,53 @@
         android:text="NEW FORM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.148" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/formNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
-        android:hint="First Name"
+        android:hint="Form Name"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="73dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/formCommentEditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Last Name"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:layout_editor_absoluteX="71dp" />
+        android:hint="Form Comment...."
+        android:inputType="textLongMessage"
+        app:layout_constraintTop_toBottomOf="@+id/formCategorySpinner"
+        tools:layout_editor_absoluteX="73dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="84dp"
         android:layout_height="49dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="SubmitForm"
         android:text="OK"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formCommentEditText"
+        app:layout_constraintVertical_bias="0.544"
         tools:layout_editor_absoluteX="135dp" />
+
+    <Spinner
+        android:id="@+id/formCategorySpinner"
+        android:layout_width="214dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/formNameEditText"
+        tools:layout_editor_absoluteX="73dp"
+        />
 
 </android.support.constraint.ConstraintLayout>
